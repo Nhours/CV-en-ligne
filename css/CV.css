@@ -199,3 +199,64 @@ section > div{
   border-radius: 5px;
   background-color: grey;
 }
+
+/*SECTION INTERETS*/
+.interet{
+  flex: 0 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.interet img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px #555;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+  section{
+      width: 80%;
+      box-shadow: 0px 0px 10px #bbb;
+  }
+  a:hover{
+      color: #EA0;
+  }
+  header h1{
+      width: 80%;
+  }
+  .prez, .contact{
+      flex: 0 0 45%;
+  }
+  .prez{
+      border-bottom: none;
+      border-right: 2px solid #ccc;
+      padding-right: 20px;
+      margin-left: auto;
+  }
+  .contact{
+      padding-left: 20px;
+      margin-right: auto;
+  }
+  .prez a{
+      border: 2px solid transparent;
+  }
+  .prez a:hover{
+      color: #f28835;
+      background-color: #fff;
+      border: 2px solid #f28835;
+      box-shadow: 0px 0px 20px #666;
+  }
+  .exp-logo{
+      flex: 0 0 10%;
+  }
+  .exp-info, .exp-desc{
+      flex: 0 0 85%;
+      margin-left: auto;
+  }
+  .interet{
+      flex: 0 1 25%;
+  }
+}
