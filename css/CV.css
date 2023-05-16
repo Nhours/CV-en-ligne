@@ -22,7 +22,7 @@ a{
 header, footer{
   width: 100%;
   padding: 20px 0px;
-  background: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+  background: url("../img/background.PNG") #4f4f4f;
   box-shadow: 0px 0px 15px #333;
 }
 header{
@@ -203,8 +203,8 @@ section > div{
   margin-bottom: 20px;
 }
 .interet img{
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   box-shadow: 0px 0px 15px #555;
 }
