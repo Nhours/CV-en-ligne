@@ -1,3 +1,15 @@
+/** Dark CSS */
+
+.dark {
+  background-color: #112F41;
+  color: #ffffff;
+}
+
+.dark button {
+  background: #144098;
+  color: #fff;
+}
+
 /*STYLES GENERAUX*/
 *{
   font-family: Avenir, sans-serif;
