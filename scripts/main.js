@@ -1,17 +1,19 @@
-$("#darkTrigger").click(function(){
-    if ($("body").hasClass("dark")){
-      $("body").removeClass("dark");
-    }
-    else{
-      $("body").addClass("dark");
-    }
-  });
-  
-  $(document).ready(function () {
-    var d = new Date();
-    var n = d.getHours();
-  
-    if(n > 17 || n < 8){
-      $("body").addClass("dark");
-    }
-  });
+const btnToggle = document.getElementById('btn-toggle');
+
+btnToggle.addEventListener('click', () => {
+
+  const body = document.body;
+
+  if(body.classList.contains('dark')) {
+    body.classList.add('light')
+    body.classList.remove('dark')
+    btnToggle.innerHTML = "Go dark"
+
+  } else if (body.classList.contains('light')) {
+    body.classList.add('dark')
+    body.classList.remove('light')
+    btnToggle.innerHTML = "Go light"
+
+  }
+
+})
