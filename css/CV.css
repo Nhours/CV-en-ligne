@@ -131,6 +131,7 @@ section > div{
   border-radius: 5px;
 }
 .contact-flex{
+  margin-left: 10px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
