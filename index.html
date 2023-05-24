@@ -10,14 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preload" href="img/background.webp" as="image" />
+    <!-- <link rel="preload" href="img/background.webp" as="image" /> -->
     <title>Curriculum Vitae Sébastien</title>
 </head>
 
 <body class="light">
     <!-- Titre -->
     <header>
-        <h1>Curriculum Vitae de Gérard Jugnot</h1>
+        <ul>
+            <li><a href="#prez">Qui suis-je</a></li>
+            <li><a href="#contact">Informations contact</a></li>
+            <li><a href="#exp">Expériences</a></li>
+            <li><a href="#formations">Formations</a></li>
+            <li><a href="#comp">Compétences</a></li>
+            <li><a href="#centreinteret">Loisirs</a></li>
+        </ul>
     </header>
     <section>
         <div>
@@ -34,7 +41,7 @@
         </div>
 
         <!-- Présentation -->
-        <div class="prez">
+        <div class="prez" id="prez">
             <h2>Qui suis-je ?</h2>
             <p>
                 Technicien informatique justifiant d'un Baccalauréat Micro réseau :
@@ -50,7 +57,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="contact">
+        <div class="contact" id="contact">
             <h2>Informations de contact</h2>
             <div class="contact-flex">
                 <div><i class="fa-solid fa-user"></i></div>
@@ -83,7 +90,7 @@
 
     <section>
         <!-- Expériences professionnelles -->
-        <h2>Expériences professionnelles</h2>
+        <h2 id="exp">Expériences professionnelles</h2>
         <div class="exp">
             <div class="exp-logo">
                 <img src="img/logopierre.webp" alt="Logo de Pierre Giraud" />
@@ -138,7 +145,7 @@
 
     <section>
         <!-- Formations -->
-        <h2>Formation</h2>
+        <h2 id="formations">Formations</h2>
         <div class="exp">
             <div class="exp-logo">
                 <img src="img/edhec.webp" alt="Logo EDHEC" />
@@ -170,7 +177,7 @@
 
     <section>
         <!-- Compétences -->
-        <h2>Compétences</h2>
+        <h2 id="comp">Compétences</h2>
         <h3 class="h3gauche">Professionnelles</h3>
         <div class="comp">
             <p>HTML / CSS</p>
@@ -212,7 +219,7 @@
     </section>
 
     <section>
-        <h2>Centres d'intérêt</h2>
+        <h2 id="centreinteret">Centres d'intérêt</h2>
         <figure class="interet">
             <img src="img/iconetrail.webp" alt="Trail" />
             <br />

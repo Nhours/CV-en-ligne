@@ -107,12 +107,30 @@ a {
   color: #000;
 }
 
+/* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: none;
+}
+
 /*HEADER & FOOTER*/
 header,
 footer {
   width: 100%;
   padding: 20px 0px;
-  background: url("../img/background.webp") #4f4f4f;
+  background-color:#005d94;
   box-shadow: 0px 0px 15px #333;
 }
 
@@ -186,7 +204,7 @@ section>div {
   padding: 10px;
   margin: 10px auto 30px auto;
   color: #fff;
-  background-color: rgb(0, 93, 148);
+  background-color: #005d94;
   box-shadow: 0px 0px 10px #ccc;
   border-radius: 5px;
 }
