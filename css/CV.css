@@ -1,25 +1,71 @@
 /* BOUTON */
 #btn-toggle {
   position: absolute;
-  top: 130px;
-  right : 15px;
+  top: 143px;
+  right: 25px;
   width: 80px;
   height: 40px;
   border-radius: 10%;
   background: #333;
   color: #fff;
-  border : 1px solid #333;
+  border: 1px solid #333;
   box-shadow: 0px 0px 10px #bbb;
-  display : flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  }
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: absolute;
+  top: 150px;
+  right: 40px;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
 
 /* BODY DARK */
 body.dark {
   color: #fff !important;
-  background : #494949 !important;
+  background: #494949 !important;
 }
 
 body.dark #btn-toggle {
@@ -32,66 +78,74 @@ body.dark section {
   color: #f1f1f1;
 }
 
-body.dark a{
+body.dark a {
   text-decoration: none;
   color: #f1f1f1;
 }
 
 /*STYLES GENERAUX*/
-*{
+* {
   font-family: Avenir, sans-serif;
   padding: 0px;
   margin: 0px;
   text-align: justify;
   box-sizing: border-box;
 }
-body{
+
+body {
   background: #ededed;
 }
-p{
+
+p {
   margin-left: 10px;
   font-size: 1em;
   line-height: 1.5em;
 }
-a{
+
+a {
   text-decoration: none;
   color: #000;
 }
 
 /*HEADER & FOOTER*/
-header, footer{
+header,
+footer {
   width: 100%;
   padding: 20px 0px;
   background: url("../img/background.webp") #4f4f4f;
   box-shadow: 0px 0px 15px #333;
 }
-header{
+
+header {
   border-bottom: 2px solid #fff;
   height: 120px;
 }
-header h1{
+
+header h1 {
   color: white;
   font-size: 1.5em;
   width: 90%;
   margin: 0 auto;
 }
 
-footer{
+footer {
   border-top: 2px solid #fff;
 }
-footer p{
+
+footer p {
   width: 90%;
   margin: 0 auto;
   color: #fff;
   text-align: center;
 }
-footer a{
+
+footer a {
   color: #fff;
 }
 
 /*SECTIONS*/
-section{
-  display: flex; 
+section {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
@@ -101,28 +155,32 @@ section{
   background-color: #fff;
 }
 
-section h2{
+section h2 {
   margin: 20px 0;
   width: 90%;
 }
-section > div{
+
+section>div {
   width: 90%;
 }
 
 /*SECTION INFOS*/
-.photo{
+.photo {
   text-align: center;
 }
-.photo img{
+
+.photo img {
   border: 3px solid #fff;
   box-shadow: 0px 0px 10px #777;
   border-radius: 50%;
   margin-top: -80px;
 }
-.prez{
+
+.prez {
   border-bottom: 2px dashed #ccc;
 }
-.prez a{
+
+.prez a {
   display: block;
   text-align: center;
   padding: 10px;
@@ -132,105 +190,126 @@ section > div{
   box-shadow: 0px 0px 10px #ccc;
   border-radius: 5px;
 }
-.contact-flex{
+
+.contact-flex {
   margin-left: 10px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.contact-flex p:first-child{
+
+.contact-flex p:first-child {
   flex: 0 0 40%;
 }
-.contact-flex p:last-child{
+
+.contact-flex p:last-child {
   flex: 0 0 60%;
 }
-.social{
+
+.social {
   display: flex;
   justify-content: space-around;
   margin: 10px auto 0px auto;
 }
-.fa-user{
+
+.fa-user {
   margin-left: 3px;
 }
 
 /*SECTION EXP ET FORMATION*/
-.exp{
+.exp {
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.exp-info{
+
+.exp-info {
   display: flex;
   flex-flow: column wrap;
 }
-.exp-logo{
+
+.exp-logo {
   flex: 0 0 25%;
   max-width: 100px;
 }
-.exp-info{
+
+.exp-info {
   flex: 0 0 70%;
   margin-left: auto;
 }
-.exp img{
+
+.exp img {
   width: 100%;
 }
-.exp h3{
-  font-size:  1.2em;
+
+.exp h3 {
+  font-size: 1.2em;
 }
-.exp h4{
-  font-size:  1em;
+
+.exp h4 {
+  font-size: 1em;
   font-weight: normal;
 }
 
 /*SECTION COMPETENCES*/
-.h3gauche{
+.h3gauche {
   width: 90%;
 }
-.comp{
-  display:flex;
+
+.comp {
+  display: flex;
   flex-flow: row wrap;
   margin-bottom: 10px;
 }
-.comp p{
+
+.comp p {
   flex: 0 0 40%;
 }
-.conteneur-barre{
+
+.conteneur-barre {
   flex: 0 0 60%;
   border-radius: 5px;
   background-color: grey;
   border-bottom: 1px ridge grey;
 }
-.barre{
+
+.barre {
   display: block;
   height: 100%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.c85{
+
+.c85 {
   width: 85%;
   background-color: #4B8;
 }
-.c90{
+
+.c90 {
   width: 90%;
   background-color: #4B8;
 }
-.c95{
+
+.c95 {
   width: 95%;
   background-color: #4B8;
 }
-.c100{
+
+.c100 {
   width: 100%;
   background-color: #4B8;
   border-radius: 5px;
 }
-.comp2{
+
+.comp2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.conteneur-barre2{
+
+.conteneur-barre2 {
   flex: 0 0 100%;
   height: 0.5em;
   margin-bottom: 0.25em;
@@ -239,61 +318,90 @@ section > div{
 }
 
 /*SECTION INTERETS*/
-.interet{
+.interet {
   flex: 0 1 50%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   margin-bottom: 20px;
 }
-.interet img{
+
+.interet img {
   max-width: 100%;
   border-radius: 50%;
   box-shadow: 0px 0px 15px #555;
 }
 
 /*VERSION BUREAU DU CV*/
-@media screen and (min-width: 980px){
-  section{
-      width: 80%;
-      box-shadow: 0px 0px 10px #bbb;
+@media screen and (min-width: 980px) {
+  section {
+    width: 80%;
+    box-shadow: 0px 0px 10px #bbb;
   }
-  a:hover{
-      color: #35f264;
+
+  a:hover {
+    color: #35f264;
   }
-  header h1{
-      width: 80%;
+
+  header h1 {
+    width: 80%;
   }
-  .prez, .contact{
-      flex: 0 0 45%;
+
+  .prez,
+  .contact {
+    flex: 0 0 45%;
   }
-  .prez{
-      border-bottom: none;
-      border-right: 2px solid #ccc;
-      padding-right: 20px;
-      margin-left: auto;
+
+  .prez {
+    border-bottom: none;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+    margin-left: auto;
   }
-  .contact{
-      padding-left: 20px;
-      margin-right: auto;
+
+  .contact {
+    padding-left: 20px;
+    margin-right: auto;
   }
-  .prez a{
-      border: 2px solid transparent;
+
+  .prez a {
+    border: 2px solid transparent;
   }
-  .prez a:hover{
-      color: #333;
-      background-color: #fff;
-      border: 2.5px solid #35f2a3;
-      box-shadow: 0px 0px 20px #666;
+
+  .prez a:hover {
+    color: #333;
+    background-color: #fff;
+    border: 2.5px solid #35f2a3;
+    box-shadow: 0px 0px 20px #666;
   }
-  .exp-logo{
-      flex: 0 0 10%;
+
+  .exp-logo {
+    flex: 0 0 10%;
   }
-  .exp-info, .exp-desc{
-      flex: 0 0 85%;
-      margin-left: auto;
+
+  .exp-info,
+  .exp-desc {
+    flex: 0 0 85%;
+    margin-left: auto;
   }
-  .interet{
-      flex: 0 1 25%;
+
+  .interet {
+    flex: 0 1 25%;
   }
 }
+
+/* .label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+} */
