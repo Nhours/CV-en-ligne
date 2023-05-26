@@ -17,14 +17,3 @@ btnToggle.addEventListener('click', () => {
   }
 
 })
-
-const dropdown = document.querySelector('.dropdown');
-const dropdownWindow = document.querySelector('.dropdown__window')
-
-dropdown.addEventListener('click', (event) => {
-  dropdownWindow.classList.toggle('dropdown__window--active');
-});
-
-dropdown.addEventListener('blur', (event) => {
-  dropdownWindow.classList.remove('dropdown__window--active');
-});
